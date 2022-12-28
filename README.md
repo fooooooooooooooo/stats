@@ -1,14 +1,11 @@
 # [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 
-<!--
-https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
--->
-<a href="https://github.com/jstrieb/github-stats">
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
-<img src="https://github.com/jstrieb/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" />
-</a>
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/fooooooooooooooo/stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/fooooooooooooooo/stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/fooooooooooooooo/stats/blob/master/generated/overview.svg#gh-light-mode-only" />
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/fooooooooooooooo/stats/blob/master/generated/languages.svg#gh-light-mode-only" />
+</picture>
 
 Generate visualizations of GitHub user and repository statistics with GitHub
 Actions. Visualizations can include data for both private repositories, and for
